@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "SCSS/StyleSheet1.css",
+    "inputFile": "SCSS/StyleSheet1.scss"
+  },
+  {
+    "outputFile": "SCSS/WeatherForecast.css",
+    "inputFile": "SCSS/WeatherForecast.scss"
+  }
+]

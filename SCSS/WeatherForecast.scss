@@ -1,0 +1,156 @@
+﻿body {
+
+    .hide {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        background-color: black;
+        color: white;
+        font-weight: 300;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+
+        div {
+            margin: auto;
+        }
+    }
+
+    .main-search-wrapper {
+        display: flex;
+        padding: 10px 0;
+
+        .search-container {
+            #search-value-city {
+                /*height: 30px;*/
+            }
+
+            #search-value {
+                width: 100%;
+            }
+
+            .btn-container #submit-btn {
+                align-content: center;
+            }
+        }
+    }
+
+
+
+    .main-weather-container {
+
+        #weather-details-container {
+            display: flex;
+            justify-content: space-between;
+            border-width: 2px;
+            background-color: aliceblue;
+            font-size: 14px;
+            padding: 10px;
+
+            .wind-wrapper {
+                .city-name {
+                    background-color: black;
+                    color: white;
+                    font-weight: 200;
+                    margin-bottom: 2px;
+                    text-align: center;
+                }
+
+                .wind-icon-details-container {
+                    display: flex;
+
+                    .wind-icon {
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+
+                    .wind-container {
+                        font-size: smaller;
+                        padding: 2px;
+                    }
+                }
+            }
+
+            .fav-btn {
+                display: grid;
+
+                button {
+                    margin-bottom: 10px;
+                }
+
+                &.hide {
+                    /* display: none;*/
+                }
+            }
+
+            #submit-fav-btn.active {
+                background-color: green;
+            }
+        }
+    }
+
+
+
+    .fav-city-list-container {
+        border: 1px solid #eaeaea;
+        background-color: #f7f7f7;
+
+        .fav-title-container {
+            text-align: center;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+
+        .fav-city-wrapper {
+            border-bottom: 1px solid #eaeaea;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        .btn-container {
+            font-size: 12px;
+
+            button {
+                margin-right: 10px;
+            }
+        }
+
+        &.hide {
+            /*display: none;*/
+        }
+    }
+
+    #error-details {
+        color: red;
+    }
+
+    .forecast-container {
+        padding: 10px;
+        background-color: bisque;
+
+        .forecast-title {
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        .forecast-list-collection {
+            display: flex;
+            overflow-x: auto;
+
+            .forecast-list {
+                margin: 10px 5px;
+                border: solid 1px;
+                border-color: brown;
+                min-width: fit-content;
+                padding: 5px;
+            }
+        }
+    }
+}

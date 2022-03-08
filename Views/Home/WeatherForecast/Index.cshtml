@@ -1,0 +1,83 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>weather forecast</title>
+    @*<script src="jquery-3.5.1.min.js"></script>*@
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="~/Scripts/WeatherForecast/WeatherForecast.js"></script>
+    <link href="~/SCSS/WeatherForecast.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/765aa96cd3.js" crossorigin="anonymous"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <div>
+                Hello.. Welcome to weather forecast
+            </div>
+
+        </header>
+        <div class="main-search-wrapper">
+            <div class="search-container">
+                <label>
+                    <input type="text" id="search-value-city" required="required" placeholder="please enter a city name to continue">
+                </label>
+
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" id="submit-btn">
+                    <span>Live Wind Info </span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div class="main-weather-container hide">
+        <div id="weather-details-container">
+            <div class="wind-wrapper">
+                <div class="city-name"></div>
+                <div class="wind-icon-details-container">
+                    <div class="wind-icon">
+                        <img src="~/Images/wind.png" alt="Wind-speed-dec-gust-image" />
+                    </div>
+                    <div class="wind-container">
+                        <div class="wind-speed"></div>
+                        <div class="wind-degree"></div>
+                        <div class="wind-gust"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fav-btn hide">
+                <button type="submit" id="submit-fav-btn" title="Add/Remove from favourites">
+                    <span><i class='fa-solid fa-heart'></i></span>
+                </button>
+                <button type="submit" id="forecast-btn" title="Click to see the wind forecast">
+                    <span><i class='fa-solid fa-wind'></i></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="forecast-container hide">
+        <div class="forecast-title"> 5 day /3 hour forecast (swipe/scroll to see more)</div>
+        <div class="forecast-list-collection"></div>
+    </div>
+    <div id="error-details">
+        <div class="error-content">
+
+        </div>
+    </div>
+
+    <div class="fav-city-list-container hide">
+
+    </div>
+</body>
+</html>
